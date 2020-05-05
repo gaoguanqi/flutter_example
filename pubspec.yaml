@@ -24,6 +24,16 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
 
+  # 屏幕适配
+  flutter_screenutil: ^1.1.0
+
+  # 视频播放器
+  video_player: ^0.10.9+1
+
+  # 提示 toast
+  fluttertoast: ^4.0.1
+
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
