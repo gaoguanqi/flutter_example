@@ -1,3 +1,4 @@
+import 'package:example/pages/dialog/dialog_page.dart';
 import 'package:example/pages/login/player_login_page.dart';
 import 'package:example/pages/refresh/list_page.dart';
 import 'package:example/pages/refresh/pull_refresh_page.dart';
@@ -26,8 +27,9 @@ class _IndexPageState extends State<IndexPage> {
 
     return Scaffold(
 //      body: PlayerLoginPage(),
-      body: PullRefreshPage(),
+//      body: PullRefreshPage(),
 //      body: ListPage(),
+      body: DialogPage(),
     );
   }
 }
