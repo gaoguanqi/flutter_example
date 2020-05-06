@@ -1,4 +1,6 @@
 import 'package:example/pages/login/player_login_page.dart';
+import 'package:example/pages/refresh/list_page.dart';
+import 'package:example/pages/refresh/pull_refresh_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -23,7 +25,9 @@ class _IndexPageState extends State<IndexPage> {
     );
 
     return Scaffold(
-      body: PlayerLoginPage(),
+//      body: PlayerLoginPage(),
+      body: PullRefreshPage(),
+//      body: ListPage(),
     );
   }
 }

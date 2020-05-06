@@ -33,11 +33,23 @@ dependencies:
   # 提示 toast
   fluttertoast: ^4.0.1
 
+  # json  建议网站收藏 https://caijinglong.github.io/json2dart/index.html
+  json_serializable: ^3.3.0
+
+  # http
+  dio: ^3.0.9
+
+  # 下拉刷新
+  flutter_easyrefresh: ^2.1.1
+
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
+  # json build
+  # Terminal下运行 flutter packages pub run build_runner build
+  build_runner: ^1.9.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
