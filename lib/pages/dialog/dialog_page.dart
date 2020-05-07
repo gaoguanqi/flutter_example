@@ -79,6 +79,8 @@ class _DialogPageState extends State<DialogPage> {
                */
               showCupertinoDialog<CupertinoAlertDialog>(context: context, builder: (context){
                 return CupertinoAlertDialog(
+                    insetAnimationCurve: Curves.fastOutSlowIn,
+                  insetAnimationDuration: Duration(milliseconds: 100),
                     title: Text('title'),
                     content: SingleChildScrollView(
                       padding: EdgeInsets.only(top: 10),
@@ -111,12 +113,6 @@ class _DialogPageState extends State<DialogPage> {
                 );
               });
             }, child: Text('dialog 2'),),
-
-            FlatButton(onPressed: (){
-
-            }, child: Text('dialog 3'),),
-
-
             FlatButton(onPressed: (){
               _handleLoading(context);
             }, child: Text('loading dialog'),),
