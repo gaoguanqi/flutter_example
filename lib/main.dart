@@ -1,9 +1,16 @@
 import 'package:example/global.dart';
 import 'package:example/pages/index/index_page.dart';
+import 'package:example/pages/provider/theme_model.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 void main() => Global.init().then((e) =>runApp(
-    MyApp(),
+      ChangeNotifierProvider<ThemeModel>(
+        create: (_){
+          return ThemeModel(ThemeType.light);
+        },
+        child: MyApp(),
+      ),
 ));
 
 class MyApp extends StatelessWidget {
@@ -12,9 +19,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter example',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: Provider.of<ThemeModel>(context,listen: true).themeData,
       home: IndexPage(),
     );
   }

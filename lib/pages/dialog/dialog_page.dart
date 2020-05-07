@@ -40,6 +40,84 @@ class _DialogPageState extends State<DialogPage> {
         child: Column(
           children: <Widget>[
             FlatButton(onPressed: (){
+              /**
+               *  this.title,
+                  this.titlePadding,
+                  this.titleTextStyle,
+                  this.content,
+                  this.contentPadding = const EdgeInsets.fromLTRB(24.0, 20.0, 24.0, 24.0),
+                  this.contentTextStyle,
+                  this.actions,
+                  this.backgroundColor,
+                  this.elevation,
+                  this.semanticLabel,
+                  this.shape,
+               */
+              showDialog<AlertDialog>(context: context,builder: (context){
+                return AlertDialog(
+                  title: Text('title'),
+                  titlePadding: EdgeInsets.all(10),
+                  titleTextStyle: TextStyle(color: Colors.deepOrangeAccent),
+                  content: Text('content'),
+                  actions: <Widget>[
+                    Text('action'),
+                  ],
+                  backgroundColor: Colors.green,
+                  semanticLabel: 'semanticLabel',
+                );
+              });
+            }, child: Text('dialog 1'),),
+            FlatButton(onPressed: (){
+              /**
+               * this.title,
+                  this.content,
+                  this.actions = const <Widget>[],
+                  this.scrollController,
+                  this.actionScrollController,
+                  this.insetAnimationDuration = const Duration(milliseconds: 100),
+                  this.insetAnimationCurve = Curves.decelerate,
+               */
+              showCupertinoDialog<CupertinoAlertDialog>(context: context, builder: (context){
+                return CupertinoAlertDialog(
+                    title: Text('title'),
+                    content: SingleChildScrollView(
+                      padding: EdgeInsets.only(top: 10),
+                      //对话框内容部分
+                      child: ListBody(
+                        children: [
+                          Text('是否要删除?'),
+                          Text('一旦删除数据不可恢复！'),
+                        ],
+                      ),
+                    ),
+                  actions: <Widget>[
+                    CupertinoDialogAction(
+                    child: Text('确定'),
+                      onPressed: () {
+                        toastInfo(msg: '点击确定');
+                        Navigator.pop(context);
+                      },
+                      isDefaultAction: true,
+                    ),
+                    CupertinoDialogAction(
+                    child: Text('取消'),
+                      onPressed: () {
+                        toastInfo(msg: '点击取消');
+                        Navigator.pop(context);
+                      },
+                      isDestructiveAction: true,
+                    ),
+                  ],
+                );
+              });
+            }, child: Text('dialog 2'),),
+
+            FlatButton(onPressed: (){
+
+            }, child: Text('dialog 3'),),
+
+
+            FlatButton(onPressed: (){
               _handleLoading(context);
             }, child: Text('loading dialog'),),
             MaterialButton(onPressed: (){

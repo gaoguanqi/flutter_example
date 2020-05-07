@@ -3,6 +3,7 @@ import 'package:example/pages/banner/list_banner_page.dart';
 import 'package:example/pages/category/category_page.dart';
 import 'package:example/pages/dialog/dialog_page.dart';
 import 'package:example/pages/login/player_login_page.dart';
+import 'package:example/pages/provider/provider1_page.dart';
 import 'package:example/pages/refresh/list_page.dart';
 import 'package:example/pages/refresh/pull_refresh_page.dart';
 import 'package:flutter/material.dart';
@@ -32,10 +33,11 @@ class _IndexPageState extends State<IndexPage> {
 //      body: PlayerLoginPage(),
 //      body: PullRefreshPage(),
 //      body: ListPage(),
-//      body: DialogPage(),
+      body: DialogPage(),
 //      body: CategoryPage(),
 //      body: ListBannerPage(),
-      body: GridBannerPage(),
+//      body: GridBannerPage(),
+//        body: Provider1Page(),
     );
   }
 }
