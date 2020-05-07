@@ -1,3 +1,4 @@
+import 'package:example/pages/category/category_page.dart';
 import 'package:example/pages/dialog/dialog_page.dart';
 import 'package:example/pages/login/player_login_page.dart';
 import 'package:example/pages/refresh/list_page.dart';
@@ -29,7 +30,8 @@ class _IndexPageState extends State<IndexPage> {
 //      body: PlayerLoginPage(),
 //      body: PullRefreshPage(),
 //      body: ListPage(),
-      body: DialogPage(),
+//      body: DialogPage(),
+      body: CategoryPage(),
     );
   }
 }
