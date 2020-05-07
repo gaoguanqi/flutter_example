@@ -33,11 +33,11 @@ class _IndexPageState extends State<IndexPage> {
 //      body: PlayerLoginPage(),
 //      body: PullRefreshPage(),
 //      body: ListPage(),
-      body: DialogPage(),
+//      body: DialogPage(),
 //      body: CategoryPage(),
 //      body: ListBannerPage(),
 //      body: GridBannerPage(),
-//        body: Provider1Page(),
+        body: Provider1Page(),
     );
   }
 }
