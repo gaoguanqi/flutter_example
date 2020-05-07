@@ -122,6 +122,7 @@ class _DialogPageState extends State<DialogPage> {
                               ),
                               onPressed: (){
                                 toastInfo(msg: data[index].name);
+                                Navigator.pop(context);
                               },
                             ),
                           );

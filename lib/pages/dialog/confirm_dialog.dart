@@ -70,14 +70,23 @@ class ConfirmDialog extends Dialog{
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
-              FlatButton(onPressed: (){
+              Expanded(child: FlatButton(onPressed: (){
                 toastInfo(msg: '点击取消');
                 Navigator.pop(context);
-              }, child: Text('取消'),),
-              FlatButton(onPressed: (){
+              }, child: Container(
+                child: Text('取消'),
+              ),),flex: 1,),
+              Container(
+                color: Colors.black12,
+                width: 1,
+                height: 44,
+              ),
+              Expanded(child: FlatButton(onPressed: (){
                 Navigator.pop(context);
                 toastInfo(msg: '点击确定');
-              }, child: Text('确定'),),
+              }, child: Container(
+                child: Text('确定'),
+              ),),),
             ],
           ),
         ),
