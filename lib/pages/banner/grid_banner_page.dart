@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
 
+///https://www.jianshu.com/p/594a327267dc
 class GridBannerPage extends StatefulWidget {
   @override
   _GridBannerPageState createState() => _GridBannerPageState();
