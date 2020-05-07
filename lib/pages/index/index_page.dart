@@ -1,3 +1,4 @@
+import 'package:example/pages/banner/grid_banner_page.dart';
 import 'package:example/pages/banner/list_banner_page.dart';
 import 'package:example/pages/category/category_page.dart';
 import 'package:example/pages/dialog/dialog_page.dart';
@@ -33,7 +34,8 @@ class _IndexPageState extends State<IndexPage> {
 //      body: ListPage(),
 //      body: DialogPage(),
 //      body: CategoryPage(),
-      body: ListBannerPage(),
+//      body: ListBannerPage(),
+      body: GridBannerPage(),
     );
   }
 }
