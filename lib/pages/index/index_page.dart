@@ -6,6 +6,7 @@ import 'package:example/pages/login/player_login_page.dart';
 import 'package:example/pages/provider/provider1_page.dart';
 import 'package:example/pages/refresh/list_page.dart';
 import 'package:example/pages/refresh/pull_refresh_page.dart';
+import 'package:example/pages/route/route_simple_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -37,7 +38,8 @@ class _IndexPageState extends State<IndexPage> {
 //      body: CategoryPage(),
 //      body: ListBannerPage(),
 //      body: GridBannerPage(),
-        body: Provider1Page(),
+//        body: Provider1Page(),
+        body: RouteSimplePage(),
     );
   }
 }

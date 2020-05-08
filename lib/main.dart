@@ -1,3 +1,6 @@
+import 'package:auto_route/auto_route.dart';
+import 'package:example/common/router/auth_grard.dart';
+import 'package:example/common/router/router.gr.dart';
 import 'package:example/global.dart';
 import 'package:example/pages/index/index_page.dart';
 import 'package:example/pages/provider/providers.dart';
@@ -20,7 +23,11 @@ class MyApp extends StatelessWidget {
       title: 'Flutter example',
       debugShowCheckedModeBanner: false,
       theme: Provider.of<ThemeModel>(context,listen: true).themeData,
-      home: IndexPage(),
+      builder: ExtendedNavigator<AppRouter>(
+          initialRoute: Routes.indexPageRoute,
+          router: AppRouter(),
+          guards: [AuthGuard()],
+      ),
     );
   }
 }

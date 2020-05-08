@@ -1,5 +1,7 @@
 import 'dart:async';
 
+import 'package:auto_route/auto_route.dart';
+import 'package:example/common/router/router.gr.dart';
 import 'package:example/common/utils/screen.dart';
 import 'package:example/common/widgets/toast.dart';
 import 'package:flutter/cupertino.dart';
@@ -123,6 +125,10 @@ class _PlayerLoginPageState extends State<PlayerLoginPage> {
   Widget _buildLoginButton() {
     return RaisedButton(onPressed: (){
       toastInfo(msg: 'login---$isCheck');
+
+
+
+
     },
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.all(Radius.circular(50)),
