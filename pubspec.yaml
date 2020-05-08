@@ -54,6 +54,9 @@ dependencies:
   # 路由
   auto_route: ^0.4.4
 
+  # 数字徽章
+#  badges: ^1.1.1
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
