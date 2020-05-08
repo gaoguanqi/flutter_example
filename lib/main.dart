@@ -2,6 +2,7 @@ import 'package:example/global.dart';
 import 'package:example/pages/index/index_page.dart';
 import 'package:example/pages/provider/providers.dart';
 import 'package:example/pages/provider/theme_model.dart';
+import 'package:example/pages/refresh/list_page.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

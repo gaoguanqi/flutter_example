@@ -30,10 +30,8 @@ class ThemeModel extends ChangeNotifier{
     currentType = type;
     if(type == ThemeType.light){
       themeData = ThemeData.light();
-//      currentIcon = Icon(Icons.brightness_4,color: Colors.black45,);
     }else{
       themeData = ThemeData.dark();
-//      currentIcon = Icon(Icons.wb_sunny,color: Colors.white,);
     }
     notifyListeners();
   }

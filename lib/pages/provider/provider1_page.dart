@@ -1,5 +1,6 @@
 import 'package:example/common/widgets/toast.dart';
 import 'package:example/pages/provider/counter.dart';
+import 'package:example/pages/provider/provider2_page.dart';
 import 'package:example/pages/provider/theme_model.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -59,8 +60,8 @@ class Provider1Page extends StatelessWidget {
             ),
             
             RaisedButton(child: Text('button'),onPressed: (){
-              
               toastInfo(msg: _textEditingController.text);
+
             },),
             
           ],
