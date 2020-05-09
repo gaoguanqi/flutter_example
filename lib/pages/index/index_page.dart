@@ -1,13 +1,4 @@
-import 'package:example/pages/anim/anim_page.dart';
-import 'package:example/pages/banner/grid_banner_page.dart';
-import 'package:example/pages/banner/list_banner_page.dart';
-import 'package:example/pages/category/category_page.dart';
-import 'package:example/pages/dialog/dialog_page.dart';
-import 'package:example/pages/login/player_login_page.dart';
-import 'package:example/pages/provider/provider1_page.dart';
-import 'package:example/pages/refresh/list_page.dart';
-import 'package:example/pages/refresh/pull_refresh_page.dart';
-import 'package:example/pages/route/route_simple_page.dart';
+import 'package:example/pages/login/scroll_login_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -41,7 +32,8 @@ class _IndexPageState extends State<IndexPage> {
 //      body: GridBannerPage(),
 //        body: Provider1Page(),
 //        body: RouteSimplePage(),
-        body: AnimPage(),
+//        body: AnimPage(),
+        body: ScrollLoginPage(),
     );
   }
 }

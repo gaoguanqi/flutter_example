@@ -10,6 +10,11 @@ class Global{
     //运行初始
     WidgetsFlutterBinding.ensureInitialized();
 
+    //竖屏
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp,
+    ]);
+
     // android 状态栏为透明的沉浸
     if(Platform.isAndroid){
       SystemUiOverlayStyle systemUiOverlayStyle =
