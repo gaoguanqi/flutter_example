@@ -1,7 +1,18 @@
 import 'package:example/common/router/routes.dart';
 import 'package:example/common/widgets/toast.dart';
 import 'package:flutter/material.dart';
-class RouteSimplePage extends StatelessWidget {
+
+class RouteSimplePage extends StatefulWidget {
+
+
+  @override
+  _RouteSimplePageState createState() => _RouteSimplePageState();
+}
+
+class _RouteSimplePageState extends State<RouteSimplePage> {
+
+  String resultData = '';
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,7 +27,7 @@ class RouteSimplePage extends StatelessWidget {
     return Container(
       child: Column(
         children: <Widget>[
-          Text('data'),
+          Text(resultData),
           FlatButton(onPressed: () async{
 //            String result = await ExtendedNavigator.rootNavigator.pushRouteDataPageRoute(data: '传递的数据啊啊啊');
 //            toastInfo(msg: '接收返回数据::$result');
@@ -28,13 +39,21 @@ class RouteSimplePage extends StatelessWidget {
 //            String result = await Navigator.of(context).pushNamed(RouteName.routeDataPage,arguments: '传递的数据啊啊啊');
 //            toastInfo(msg: '接收返回数据');
 
-            var result = await Navigator.of(context).pushNamed(RouteName.routeDataPage,arguments: {
+             var map = await Navigator.of(context).pushNamed(RouteName.routeDataPage,arguments: {
               'data' : '传递的数据啊啊啊',
             });
 
+             if(map != null){
+               setState(() {
+
+                 resultData = (map as Map)['result'];
+                 if(resultData.isNotEmpty){
+                   toastInfo(msg: '接收返回数据:${resultData}');
+                 }
+               });
+             }
 
 
-            toastInfo(msg: '接收返回数据:${result.toString()}');
 
           }, child: Text('button'),),
         ],
@@ -42,3 +61,4 @@ class RouteSimplePage extends StatelessWidget {
     );
   }
 }
+

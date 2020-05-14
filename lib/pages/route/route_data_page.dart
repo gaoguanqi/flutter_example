@@ -22,7 +22,9 @@ class RouteDataPage extends StatelessWidget {
         title: Text('data'),
         leading: IconButton(icon: Icon(Icons.arrow_back_ios), onPressed: (){
 //          ExtendedNavigator.rootNavigator.pop<String>('返回的数据呀呀呀');
-            Navigator.pop(context,'返回的数据呀呀呀');
+            Navigator.pop(context,{
+              'result': '返回的数据哟哟',
+            });
         }),
       ),
       body: _buildBody(),
