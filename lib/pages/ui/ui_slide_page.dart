@@ -1,8 +1,4 @@
-import 'package:auto_route/auto_route.dart';
-import 'package:example/common/router/router.gr.dart';
-import 'package:example/common/utils/image.dart';
 import 'package:example/common/utils/screen.dart';
-import 'package:example/common/widgets/toast.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
@@ -105,7 +101,7 @@ class _UIslidePageState extends State<UIslidePage> {
                      _index++;
                      if(_index == assetsPaths.length){
                        Navigator.of(context).dispose();
-                       ExtendedNavigator.rootNavigator.pushNamed(Routes.playerLoginPageRoute);
+//                       ExtendedNavigator.rootNavigator.pushNamed(Routes.playerLoginPageRoute);
                      }else{
                        setState(() {
                          _swiperController.next();

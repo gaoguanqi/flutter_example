@@ -1,7 +1,5 @@
 import 'dart:async';
 
-import 'package:auto_route/auto_route.dart';
-import 'package:example/common/router/router.gr.dart';
 import 'package:example/common/utils/screen.dart';
 import 'package:example/common/widgets/toast.dart';
 import 'package:flutter/cupertino.dart';

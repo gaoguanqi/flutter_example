@@ -1,4 +1,5 @@
 import 'package:example/pages/login/scroll_login_page.dart';
+import 'package:example/pages/route/route_simple_page.dart';
 import 'package:example/pages/ui/ui_slide_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -32,10 +33,10 @@ class _IndexPageState extends State<IndexPage> {
 //      body: ListBannerPage(),
 //      body: GridBannerPage(),
 //        body: Provider1Page(),
-//        body: RouteSimplePage(),
+        body: RouteSimplePage(),
 //        body: AnimPage(),
 //        body: ScrollLoginPage(),
-        body: UIslidePage(),
+//        body: UIslidePage(),
     );
   }
 }
