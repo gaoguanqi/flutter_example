@@ -1,3 +1,4 @@
+import 'package:example/common/router/routes.dart';
 import 'package:example/common/utils/screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -100,8 +101,8 @@ class _UIslidePageState extends State<UIslidePage> {
                    FloatingActionButton(mini: true,onPressed: (){
                      _index++;
                      if(_index == assetsPaths.length){
-                       Navigator.of(context).dispose();
 //                       ExtendedNavigator.rootNavigator.pushNamed(Routes.playerLoginPageRoute);
+                       Navigator.of(context).popAndPushNamed(RouteName.playerLoginPage);
                      }else{
                        setState(() {
                          _swiperController.next();

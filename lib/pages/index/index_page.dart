@@ -33,10 +33,10 @@ class _IndexPageState extends State<IndexPage> {
 //      body: ListBannerPage(),
 //      body: GridBannerPage(),
 //        body: Provider1Page(),
-        body: RouteSimplePage(),
+//        body: RouteSimplePage(),
 //        body: AnimPage(),
 //        body: ScrollLoginPage(),
-//        body: UIslidePage(),
+        body: UIslidePage(),
     );
   }
 }

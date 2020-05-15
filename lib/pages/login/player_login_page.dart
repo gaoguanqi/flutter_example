@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:example/common/router/routes.dart';
 import 'package:example/common/utils/screen.dart';
 import 'package:example/common/widgets/toast.dart';
 import 'package:flutter/cupertino.dart';
@@ -124,7 +125,7 @@ class _PlayerLoginPageState extends State<PlayerLoginPage> {
     return RaisedButton(onPressed: (){
       toastInfo(msg: 'login---$isCheck');
 
-
+    Navigator.of(context).popAndPushNamed(RouteName.mimicryPage);
 
 
     },
