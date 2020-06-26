@@ -1,8 +1,6 @@
 import 'package:example/common/widgets/toast.dart';
 import 'package:example/pages/provider/counter.dart';
-import 'package:example/pages/provider/provider2_page.dart';
 import 'package:example/pages/provider/theme_model.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
